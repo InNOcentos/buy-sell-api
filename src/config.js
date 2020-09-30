@@ -1,14 +1,14 @@
 'use strict';
 const path = require('path');
-const dotenv = require('dotenv').config({
+/* const dotenv = require('dotenv').config({
     path: path.join(__dirname,'../settings.env')
-});
+}); */
 const {ExitCode} = ('./constants');
 
-if (dotenv.error) {
+/* if (dotenv.error) {
     console.error(`Can't get env variables. Error: ${ dotenv.error }`);
     process.exit(ExitCode.error);
-}
+} */
 
 module.exports = {
     db_host: process.env.DB_HOST,
