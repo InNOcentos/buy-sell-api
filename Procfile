@@ -1,1 +1,1 @@
-web: node ./src/service/service.js -- --fill-db 100
+web: node ./src/service/service.js --server 3000
